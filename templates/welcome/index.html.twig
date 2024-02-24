@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}symfony-questionnaire{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    
+    <img src="{{ asset('build/menu.png') }}" class="menu-icon" alt="MENU logo" onclick="openmenu()">
+
+    <div class="menu-box" id="menu">
+        <div class="right-links">
+            <a class="get-started" href="#">Get started</a>
+            <a class="close" href="#" onclick="closemenu()">Close</a>
+        </div>
+
+        <div class="menu-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Create an account</a>
+            <a href="#">Sign in</a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+var menu = document.getElementById("menu");
+
+function closemenu() {
+    menu.style.top = "-100vh";
+}
+
+function openmenu() {
+    menu.style.top = "17%";
+}
+</script>
+
+{% endblock %}
