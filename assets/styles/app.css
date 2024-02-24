@@ -26,7 +26,7 @@
     width: 80%;
     background-color: #242449;
     position: absolute;
-    top: 17%;
+    top: -100vh;
     left: 10%;
     padding: 50px 100px;
     transition: top 1s;
@@ -73,4 +73,23 @@
 .menu-links a:hover::after {
     display: inline-block;
 }
+
+.menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.menu-button-vertical {
+    display: block;
+}
+
+.onteste {
+    color: green;
+}
+
+
+
 
